@@ -1,7 +1,19 @@
-## Put comments here that give an overall description of what your
-## functions do
+## makeCacheMatrix returns a list of function to be the params in cacheSolve
+## 
+##
+## cacheSolve get the inverse of the matrix created in makeCacheMatrix() and returns either the rruntime value 
+## or from the cache if has already been calculated.
+
+
 
 ## Write a short comment describing this function
+## Param: invertible matrx
+## Output: 
+##  1. set the matrix
+##  2. get the matrix
+##  3. set the inverse
+##  4. get the inverse
+##this list is used as the param to cacheSolve()
 
 makeCacheMatrix <- function(x = matrix()) {
       inv <- NULL
@@ -16,7 +28,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## Param: makeCacheMatrix Funtion output matrix
+## Output: inverse of the original matrix input in makeCacheMatrix Funtion
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
